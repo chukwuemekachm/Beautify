@@ -1,6 +1,6 @@
 import { IAction, IProductState } from '../types';
 
-const initialState: IProductState = {
+export const initialState: IProductState = {
   currentProduct: {},
   products: [],
 };

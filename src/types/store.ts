@@ -11,8 +11,8 @@ export interface IStoreState {
 
 export interface IAction {
   type: string,
-  payload: any,
-  error: any,
+  payload?: any,
+  error?: any,
 };
 
 export interface IPromiseMiddlewareConfig {
