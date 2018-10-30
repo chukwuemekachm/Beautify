@@ -36,6 +36,7 @@
     "redux-devtools-extension": "^2.13.5",
     "redux-promise-middleware": "^5.1.1",
     "redux-thunk": "^2.3.0",
+    "styled-components": "^4.0.2",
     "typescript": "^3.1.3"
   },
   "scripts": {
@@ -43,9 +44,17 @@
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom --coverage",
     "eject": "react-scripts-ts eject",
-    "coverage": "react-scripts-ts test --env=jsdom --coverage --coverageReporters=text-lcov | coveralls"
+    "coverage": "react-scripts-ts test --env=jsdom --coverage --coverageReporters=text-lcov | coveralls",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@storybook/addon-actions": "^4.0.0",
+    "@storybook/addon-info": "^4.0.0",
+    "@storybook/addon-links": "^4.0.0",
+    "@storybook/addons": "^4.0.0",
+    "@storybook/react": "^4.0.0",
     "@types/enzyme": "^3.1.14",
     "@types/enzyme-adapter-react-16": "^1.0.3",
     "@types/enzyme-to-json": "^1.5.2",
@@ -55,10 +64,14 @@
     "@types/react-dom": "^16.0.9",
     "@types/react-redux": "^6.0.9",
     "@types/react-router-dom": "^4.3.1",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.4",
     "coveralls": "^3.0.2",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.6.0",
     "enzyme-to-json": "^3.3.4",
-    "react-test-renderer": "^16.6.0"
+    "expect": "^23.6.0",
+    "react-test-renderer": "^16.6.0",
+    "storybook-addon-specifications": "^2.1.2"
   }
 }

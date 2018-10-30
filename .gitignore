@@ -62,3 +62,4 @@ typings/
 
 # Auto generated files
 package-lock.json
+.cache/
