@@ -2,5 +2,9 @@ language: node_js
 node_js:
   - "9"
 
+env:
+  - service_name=$SERVICE_NAME
+  - repo_token=$REPO_TOKEN
+
 after_success: 
   - npm run coverage
